@@ -1,0 +1,459 @@
+%\documentclass[11pt,a4paper]{article}
+\documentclass[10pt]{article}
+
+\def\name{Yonatan Berman}
+
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{enumitem} % Enumerate with [resume] option
+\usepackage{sectsty} % Custom section fonts
+\usepackage{setspace}
+\usepackage{titlesec}
+\titleformat{\section}{\large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalsize\bfseries}{\thesection}{1em}{}
+
+%\renewcommand{\familydefault}{\sfdefault}
+%\usepackage{helvet}
+
+% Body
+%\setmainfont{Garamond Premier Pro}
+
+% Title
+%\newfontfamily\titleface{Chaparral Pro Subhead}
+%\newcommand{\titlefont}[1]{{\titleface\large\MakeUppercase{#1}}}
+
+% Section Headings
+%\newfontfamily\sectionface{Chaparral Pro Subhead}
+%\sectionfont{\sectionface\mdseries\normalsize\uppercase}
+%\subsectionfont{\sectionface\mdseries\normalsize\itshape}
+
+% Other possible font commands include:
+% \ttfamily for teletype,
+%\sffamily for sans serif,
+% \bfseries for bold,
+% \scshape for small caps,
+% \normalsize, \large, \Large, \LARGE sizes.
+
+% The following metadata will show up in the PDF properties
+\hypersetup{
+  colorlinks = true,
+  urlcolor = black,
+  pdfauthor = {\name},
+  pdfkeywords = {economics,inequality,income distribution},
+  pdftitle = {\name: Curriculum Vitae},
+  pdfsubject = {Curriculum Vitae},
+  pdfpagemode = UseNone
+}
+
+\geometry{
+  left=1in,
+  right=1in,
+  bottom=1in,
+  top=1in
+}
+
+%\onehalfspacing
+%\singlespacing
+\linespread{0.9}
+
+\setlength\parindent{0em}
+
+% Make lists without bullets and compact spacing
+\renewenvironment{itemize}{
+  \begin{list}{}{
+      \setlength{\leftmargin}{1.0em}
+      \setlength{\itemsep}{0.1em}
+      \setlength{\parskip}{0pt}
+      \setlength{\parsep}{0.2em}
+    }
+}{
+  \end{list}
+}
+\setlist[enumerate]{itemsep=0.2em}
+
+% Print the month and year
+\renewcommand{\today}{\ifcase \month \or January\or February\or March\or April\or May%
+\or June\or July\or August\or September\or October\or November\or December\fi%
+\space \number \year}
+
+\begin{document}
+
+% Place name at left and date at right
+{\textbf{\large\MakeUppercase{Yonatan Berman}}}
+
+% Alternatively, print name centered and bold:
+%\centerline{\titlefont{\name}}
+
+% Date
+\bigskip
+%\today
+
+% Contact Information
+\bigskip
+%\begin{minipage}[t]{0.495\textwidth}
+%  The Graduate Center, CUNY \\
+%  365 Fifth Avenue, Room 5324 \\
+%  New York, NY 10016 \\
+%  United States \\
+%  \\
+%  Phone: +1 212-817-7964 / +44 7490 427676 \\
+%  Email: \href{mailto:yberman@gc.cuny.edu}{yberman@gc.cuny.edu} \\
+%  Homepage: \href{http://www.yonatanberman.com/}{www.yonatanberman.com}
+%\end{minipage}
+\begin{minipage}[t]{0.495\textwidth}
+  London Mathematical Laboratory \\
+  8 Margravine Gardens \\
+  London W6 8RH \\
+  United Kingdom \\
+\end{minipage}
+\begin{minipage}[t]{0.495\textwidth}
+  Email: \href{mailto:y.berman@lml.org.uk}{y.berman@lml.org.uk}\,;\,\,\,\href{mailto:yberman@gc.cuny.edu}{yberman@gc.cuny.edu}\\
+  Homepage: \href{http://www.yonatanberman.com/}{www.yonatanberman.com}
+\end{minipage}
+
+\section*{Academic Positions}
+
+\begin{itemize}
+\item Paris School of Economics
+  \begin{itemize}
+  \item Chateaubriand Postdoctoral Fellow, 2017 -- 2018
+  \item WID.world Fellow, 2018 --
+  \end{itemize}
+\item London Mathematical Laboratory
+  \begin{itemize}
+  \item Fellow, 2018 --
+  \end{itemize}
+\item City University of New York / Stone Center on Socio-Economic Inequality
+  \begin{itemize}
+  \item Visiting Associate Professor, 2020
+  \item Distinguished Visiting Fellow, Advanced Research Collaborative, 2020
+  \end{itemize}
+\end{itemize}
+
+\section*{Education}
+
+\begin{itemize}
+  \item Ph.D. Physics, Tel Aviv University, 2018
+    % Received May 16, 2010
+%    \begin{itemize}
+%    \item Dissertation Title: ``Stochastic Modeling of Inequality in Complex Financial and Economic Systems''.
+%    \item Committee: Han Hong (co-chair), Shakeeb Khan (co-chair), Paul Ellickson, Andrew Sweeting.
+%	\item The Wharton School, Visiting Student, 2015--2016.
+%	\item University College London, Visiting Student, 2015--2016.
+%    \end{itemize}
+  \item M.Sc. Physics, Ben-Gurion University of the Negev, 2012
+%    \begin{itemize}
+%    \item Dissertation Title: ``A Simplified Spatial Reduced Order Model for Boiling Water Reactor Stability''.
+%    \end{itemize}
+    % Received May 14, 2006
+  \item B.Sc. Mathematics and Physics (Talpiot), The Hebrew University of Jerusalem, 2007
+    % Received May 14, 2004
+\end{itemize}
+
+\section*{Research Fields}
+\begin{itemize}
+\item Economic Inequality, Social Mobility, Political Economy, Decision Theory
+\end{itemize}
+
+\section*{Working Papers}
+\begin{enumerate}%[resume]
+\item \href{https://bit.ly/AbsoluteMobility}{The Long Run Evolution of Absolute Intergenerational Mobility}.
+\item \href{https://bit.ly/homoploutia1}{\textit{Homoploutia}: Top Labor and Capital Incomes in the United States, 1950--2020} (with Branko Milanovic).
+\item \href{https://bit.ly/DDP_WP}{The Two Growth Rates of the Economy} (with Alex Adamou, and Ole Peters).
+\item \href{http://bit.ly/2OgeI8A}{Growth, Inequality and Absolute Mobility in the United States, 1962--2014}.
+\item \href{http://bit.ly/2JcKCOc}{On the Link Between Intergenerational Mobility and Inequality: Are They Truly Distinct?}
+\item \href{http://bit.ly/2AHQ2vZ}{Microfoundations of Discounting} (with Alex Adamou, Diomides Mavroyiannis, and Ole Peters).
+\item \href{http://bit.ly/TimeLotteries}{Risk Preferences in Time Lotteries} (with Mark Kirstein).
+\item \href{https://arxiv.org/abs/2005.00056}{What Are We Weighting For? A Mechanistic Model for Probability Weighting} (with Ole Peters, Alex Adamou, and Mark Kirstein).
+\item \href{https://bit.ly/COVID_WAGES_Berman}{The Distributional Short-Term Impact of the COVID-19 Crisis on Wages in the United States}.
+%\item \href{http://ssrn.com/abstract=2971765}{The Impact of Time Horizon on the Effect of Diversification} (with Ron Berman).
+%	\textit{Under review}.
+\end{enumerate}
+
+\section*{Work in Progress}
+\begin{enumerate}
+\item Mobility and Inequality in US Growth, 1968--2018 (with Fran\c{c}ois Bourguignon).
+\item Long Run Inequality and Two Types of Intergenerational (Im)mobility (with Ravi Kanbur).
+%\item Wealth Inequality in the United States Since 1967: The Role of Income, Saving, Asset Prices and Wealth Mobility.
+\end{enumerate}
+
+
+\section*{Publications}
+
+\begin{enumerate}%[resume]
+\item Alvaredo F., Y.~Berman and S.~Morelli \href{http://bit.ly/ABM_NBER}{On the Distribution of Estates and the Distribution of Wealth: Evidence from the Dead} (Chapter forthcoming in NBER book \textit{Measuring and Understanding the Distribution and Intra/Inter-Generational Mobility of Income and Wealth}, eds. Raj Chetty, John N. Friedman, Janet C. Gornick, Barry Johnson, and Arthur Kennickell).
+\item Berman Y. \href{http://bit.ly/IsraelPoliticalCleavages}{Inequality, Identity, and the Long-Run Evolution of Political Cleavages in Israel 1949--2019} (Chapter forthcoming in \textit{Political Cleavages, Party Systems and Social Inequalities}, eds. Amory Gethin, Clara Mart\'{i}nez-Toledano, and Thomas Piketty).
+\item Berman Y., O.~Peters and A.~Adamou \href{http://bit.ly/2pVXfH8}{Wealth Inequality and the Ergodic Hypothesis: Evidence from the United States}. \textit{Forthcoming in Journal of Income Distribution}.
+\item Berman, Y.,  Y.~Shapira and M.~Schwartz (2017).
+  \href{http://iopscience.iop.org/article/10.1209/0295-5075/118/38004/meta}{A Fokker-Planck Model for Wealth Inequality Dynamics}.
+  \textit{EPL} 118(3), 38004 (\textit{Editor's choice}; also at \href{http://www.europhysicsnews.org/articles/epn/pdf/2017/05/epn2017-48-5-6.pdf}{\textit{Europhysics News highlights} 48(5/6), 14}).
+\item Berman, Y.,  Y.~Shapira and M.~Schwartz (2017).
+  \href{http://iopscience.iop.org/article/10.1209/0295-5075/116/58003/meta}{Analytical Study of Index-Coupled Herd Behavior in Financial Markets}.
+  \textit{EPL} 116(5), 58003.
+\item Berman, Y. and Y.~Shapira (2017).
+  \href{http://www.sciencedirect.com/science/article/pii/S0378437116307221}{Revisiting $r > g$---The Asymptotic Dynamics of Wealth Inequality}.
+  \textit{Physica A} 467, 562--572.
+\item Berman, Y. and T.~Aste (2016).
+  \href{http://www.sciencedirect.com/science/article/pii/S0378437116303429}{To What Extent Does Immigration Affect Inequality?}
+  \textit{Physica A} 462, 1029--1039.
+\item Zhang, X., L.~Feng, Y.~Berman, N.~Hu and H.~E.~Stanley (2016).
+  \href{http://iopscience.iop.org/article/10.1209/0295-5075/116/18001/meta}{Exacerbated Vulnerability of Coupled Socio-economic Risk in Complex Networks}.
+  \textit{EPL} 116(1), 18001.
+\item Berman, Y., E.~Ben-Jacob and Y.~Shapira (2016).
+  \href{http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0154196}{The Dynamics of Wealth Inequality and the Effect of Income Distribution}.
+  \textit{PLOS ONE} 11(4), e0154196.
+\item Berman, Y., E.~Ben-Jacob, X.~Zhang and Y.~Shapira (2016).
+%  \href{http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0152487}{Analyzing the Long Term Cohesive Effect of Sector Specific Driving Forces}.
+%  \textit{PLOS ONE} 11(3), e0152487.
+\item Berman, Y., Y.~Shapira and E.~Ben-Jacob (2015).
+  \href{http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0130181}{Modeling the Origin and Possible Control of the Wealth Inequality Surge}.
+  \textit{PLOS ONE} 10(6), e0130181.
+\item Berman, Y., Y.~Shapira and E.~Ben-Jacob (2014).
+  \href{http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0112427}{Unraveling Hidden Order in the Dynamics of Developed and Emerging Markets''}.
+  \textit{PLOS ONE} 9(11), e112427.
+\item Shapira Y., Y.~Berman and E.~Ben-Jacob (2014).
+  \href{http://iopscience.iop.org/1367-2630/16/5/053040/article}{Modelling the Short Term Herding Behaviour of Stock Markets}.
+  \textit{New Journal of Physics} 16, 053040.
+%\item Berman, Y. (2013).
+%  {An Improved Homogenization Technique for Pin-By-Pin Diffusion Calculations}.
+%  \textit{Annals of Nuclear Energy} 53, 238--243.
+%\item Berman, Y., Y.~Lederer and E.~Meron (2012).
+%  \href{http://www.diva-portal.org/smash/get/diva2:1118961/FULLTEXT01.pdf}{A Simplified Spatial Model for BWR Stability}.
+%  \textit{Proceedings of PHYSOR 2012}, 1608--1619.
+\end{enumerate}
+
+%\section*{Other Publications}
+%
+%\begin{enumerate}[resume]
+%\item Berman, Y. (2017).
+%  \href{http://arxiv.org/abs/1706.07783}{Intergenerational Mobility Measures in a Bivariate Normal Model}.
+%  \textit{ArXiv 1706.07783}.
+%\item Berman, Y. and T.~Aste (2016).
+%  \href{http://ssrn.com/abstract=2803317}{How did EU Immigrants Affect Income and Wealth Inequality in the UK?}
+%  \textit{SSRN 2803317}.
+%%\item Berman, Y., O.~Peters and A.~Adamou (2016).
+%%  \href{http://arxiv.org/abs/1605.05631}{Far from Equilibrium: Wealth Reallocation in the United States}.
+%%  \textit{ArXiv 1605.05631}.
+%\end{enumerate}
+%
+\section*{Professional Activities}
+
+\subsection*{Conference Presentations (including scheduled)}
+
+\begin{description}[font=\mdseries]
+\item[2021]
+  AEA Annual Meeting, EE2021 conference.
+\item[2020]
+	D-TEA Conference,
+	NBER/CRIW Conference on Measuring and Understanding the Distribution and Intra/Inter-Generational Mobility of Income and Wealth.
+\item[2019]
+  AEA Annual Meeting,
+  ECINEQ Meeting 2019,
+  EEA-ESEM Annual Congress.
+\item[2018]
+  Equal Chances Conference,
+  French Economic Association Meeting,
+  LIS/LWS User Conference.
+\item[2017]
+  ECINEQ Meeting 2017,
+  Econometric Society European Winter Meeting,
+  Trends in Inequality: Social, Economic and Political Issues, International Conference on Inequality.
+%  Econophysics Colloquium (Warsaw, Poland),
+%  NetSci-X (Tel Aviv, Israel).
+%\item[2016]
+%  The Conference on Complex Systems (Amsterdam, The Netherlands),
+%  Non-Stationarity and Ergodicity in Economic and Financial Systems (Amsterdam, The Netherlands),
+%  School on Complex Systems (Amsterdam, The Netherlands).
+%\item[2015]
+%%  Econophysics Colloquium (Prague, Czech Republic),
+%  DPG Conference (Berlin, Germany).
+%\item[2014]
+%  Econophysics Colloquium (Kobe, Japan),
+%  International Conference on Econophysics (Shanghai, China).
+%\item[2012]
+%  PHYSOR (Knoxville, TN),
+%  Conference of the Nuclear Societies in Israel (Dead Sea, Israel).
+\end{description}
+
+\subsection*{Workshop and Seminar Talks (including scheduled)}
+
+\begin{description}[font=\mdseries]
+\item[2021]
+    Tel Aviv University,
+	University of Haifa.
+\item[2020]
+	City University of New York,
+	Columbia University,
+	Rutgers University,
+	The University of Edinburgh.
+\item[2019]
+  City, University of London,
+  Columbia University,
+  Copenhagen University,
+  Freie Universit\"{a}t Berlin,
+  Harvard University,
+  Norwegian University of Science and Technology,  
+  Royal Holloway, University of London,
+  Technion -- Israel Institute of Technology,
+  Weizmann Institute of Science.
+\item[2018]
+	London School of Economics,
+	Universit\'{e} Paris 1 Panth\'{e}on-Sorbonne,
+	University of Haifa,
+	The Hebrew University of Jerusalem.
+\item[2017]
+	London School of Economics,
+  	Paris School of Economics,
+%  The Institute for Structural Reforms (Tel Aviv, Israel),  
+  	Tel Aviv University.
+\item[2016]
+  Oxford University.
+%  NORDITA (Stockholm, Sweden).
+\item[2015]
+  The Hebrew University of Jerusalem,
+  University College London.
+%\item[2011]
+%  Ben-Gurion University of the Negev (Be'er Sheva, Israel).
+\end{description}
+
+\subsection*{Grants, Honors \& Awards}
+
+\begin{itemize}
+\item Advanced Research Collaborative Fellowship, 2020
+\item Laboratoires d'excellence OSE research grant, 2018 -- 2019
+\item Best Junior Scholar Paper, Trends in Inequality: Social, Economic and Political Issues, International Conference on Inequality, 2017
+\item Chateaubriand Fellowship, 2017 -- 2018
+\item INET Young Scholars Initiative Travel Grant, 2017
+\item Dan David Prize Scholarship for Young Researchers -- for Combatting Poverty, 2016 -- 2017
+\item Israel Ministry of Science, Technology and Space International PhD Travel Grant, 2016
+\item Arie and Ida Crown Memorial Foundation Scholarship, 2015 -- 2016
+%\item Econophysics Colloquium 2015 PhD Travel Grant, 2015
+\item London Mathematical Laboratory Summer Studentship, 2015
+\item Tauber Family Foundation Scholarship, 2014 -- 2016
+\item Part of the Head of Israeli Atomic Energy Commission Award Winning Team, 2009
+%\item Outstanding Cadet of Class -- Talpiot Program, 2007
+%\item Outstanding Cadet of Class -- Talpiot Program, 2006
+\end{itemize}
+
+\subsection*{Referee}
+
+Brookings Foreign Policy, Econometrica, Economica, European Economic Review, Journal of Economic Inequality, Journal of Income Distribution, Journal of the European Economic Association, Management Science, Mathematical Social Sciences, PLOS One.
+
+\subsection*{Additional Professional Positions and Visits}
+
+\begin{itemize}
+\item World Inequality Database (WID.world)
+  \begin{itemize}
+  \item Fellow, 2018 --
+  \end{itemize}
+\end{itemize}
+
+\begin{itemize}
+\item Stone Center on Socio-Economic Inequality, City University of New York
+  \begin{itemize}
+  \item Visiting Scholar, 2018 --
+  \end{itemize}
+\end{itemize}
+
+\begin{itemize}
+\item London Mathematical Laboratory
+  \begin{itemize}
+  \item Visiting Scholar, 2015 -- 2018
+  \end{itemize}
+\end{itemize}
+
+%\begin{itemize}
+%\item Talpiot Program, Israeli Air Force
+%  \begin{itemize}
+%  \item Chief Instructor and Deputy Commander, 2012--2013.
+%  \end{itemize}
+%\end{itemize}
+
+\begin{itemize}
+\item Nuclear Research Center -- Negev
+  \begin{itemize}
+  \item Researcher, 2008 -- 2012
+  \end{itemize}
+\end{itemize}
+
+
+%\section*{Professional Activities}
+%
+%\begin{itemize}
+%\item University service:
+%  Arts and Sciences Curriculum Committee, SBS Panel (2017--20)
+%\item Departmental service:
+%  Advisory Committee to the Chair (2017--19),
+%  Faculty Recruiting Committee (2010--11, 2011--12, 2014--15, 2016--17, 2017--18),
+%  Graduate Studies Committee (2012--13),
+%  Graduate Program Review Committee (2013--14),
+%  Undergraduate Studies Committee (2014--15),
+%  Econometrics seminar organizer (Autumn 2016, Spring 2018),
+%  G.S. Maddala Prize Committee (2011, 2012, 2013, 2014, 2015, 2016, 2017).
+%\item Member, Econometric Society, 2006--Present.
+%\item Member, American Economic Association, 2010--Present.
+%\item Member, American Statistical Association, 2011--Present.
+%\end{itemize}
+
+%\section*{Advising}
+%
+%\subsection*{Ph.D. Students, as Primary Advisor (Initial Placement in Parentheses)}
+%
+%\begin{itemize}
+%\item \href{http://chaoma2014.weebly.com}{Chao Ma} (2015, Assistant Professor, Xiamen University, WISE, co-advisor with Donald Haurin)
+%\item \href{http://garrettsenney.weebly.com}{Garrett T. Senney} (2016, Financial Economist, Office of the Comptroller of the Currency)
+%\item \href{http://junqiushi-ren.weebly.com}{Junqiushi Ren} (2017, Assistant Professor, Southwestern University of Finance and Economics, RIEM) % Research Institute of Economics and Management
+%\end{itemize}
+%
+%\subsection*{Ph.D. Students, as Committee Member}
+%
+%\begin{itemize}
+%\item Chih-Sheng Hsieh (2013, Assistant Professor, Chinese University of Hong Kong)
+%\item Chao Yang (2015, Assistant Professor, Shanghai University of Finance and Economics)
+%\item Xingbai Xu (2016, Assistant Professor, Xiamen University, WISE)
+%\item Xiang Hui (2016, Postdoctoral Researcher, MIT Sloan)
+%\item Wei Shi (2016, Assistant Professor, Jinan University Institute for Economic and Social Research)
+%\item Kai Yang (2016, Assistant Professor, Shanghai University of Finance and Economics)
+%\item Jongwook Park (2017, Economist, Bank of Korea)
+%\item Bosung Jang (2017, Economist, Bank of Korea)
+%\item Neslihan Sakarya (2017, Assistant Professor, University of Essex)
+%\item Tuo Liu (2017, Assistant Professor, Xiamen University, WISE)
+%\item Hyewon Kim (2018, expected)
+%\item Joseph Rossetti (2018, expected)
+%\item Hongyu Chen (2018, expected)
+%\item Jon Michel (2019, expected)
+%\item Hanbat Jeong (2019, expected)
+%\item Bo Wang (2019, expected)
+% Seonghoon Kim; candidacy exam, 2011
+% Fei Jin; candidacy exam, 2011
+% Xi Qu; candidacy exam, 2012
+%\end{itemize}
+%
+%\subsection*{Undergraduate Honors Students}
+%
+%\begin{itemize}
+%\item Erik Lauritzen (2011, co-advisor with Jennifer Suchland)
+%\end{itemize}
+
+\section*{Teaching}
+
+\subsubsection*{University of Warwick}
+
+\begin{itemize}
+\item Ergodicity in Economics: Spring 2019
+\end{itemize}
+
+\subsubsection*{Tel Aviv University}
+
+\begin{itemize}
+\item Electricity and Magnetism for Medicine Students: Spring 2014, Spring 2015, Spring 2016, Spring 2017
+\item Classical Mechanics for Medicine Students: Autumn 2015, Autumn 2016, Autumn 2017
+\end{itemize}
+
+%\subsubsection*{The Hebrew University of Jerusalem}
+%
+%\begin{itemize}
+%\item Talpiot Honors Students Seminar in Physics (lecturer in charge): Spring 2013
+%\end{itemize}
+
+\end{document}
